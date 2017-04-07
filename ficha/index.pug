@@ -1,0 +1,92 @@
+doctype html
+html(lang='en')
+	head
+		meta(charset='UTF-8')
+		meta(name="viewport", content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
+		title Ficha de Vampiro: A máscara
+		link(href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700', rel='stylesheet')
+		link(href='style.css', rel='stylesheet')
+	body(onload='fill()')
+		button.save SALVAR
+		.wrapper
+			section.title
+				img(src="logo-red.png", alt="")
+				h1#charTitle Ficha de personagem
+			section.card.dados.compressed
+				button.toggle Dados
+				input#personagem(type='text', placeholder='Personagem')
+				input#jogador(type='text', placeholder='Jogador')
+				input#cronica(type='text', placeholder='Crônica')
+				input#natureza(type='text', placeholder='Natureza')
+				input#comportamento(type='text', placeholder='Comportamento')
+				input#cla(type='text', placeholder='Clã')
+				input#geracao(type='tel', placeholder='Geração')
+				input#senhor(type='text', placeholder='Senhor')
+				input#conceito(type='text', placeholder='Conceito')
+			section.card.atributos.compressed
+				button.toggle Atributos
+				mixin pontos(nome, id)
+					div.pontos
+						h3= nome
+						.counter
+							button.menos -
+							span.ponto(id=id) 0
+							button.mais +
+				h2 Físicos
+				+pontos('Força','forca')
+				+pontos('Destreza','destreza')
+				+pontos('Vigor','vigor')
+				h2 Sociais
+				+pontos('Carisma','carisma')
+				+pontos('Manipulação','maniplulacao')
+				+pontos('Aparência','aparencia')
+				h2 Mentais
+				+pontos('Percepção','percepcao')
+				+pontos('Inteligência','inteligencia')
+				+pontos('Raciocínio','raciocinio')
+			section.card.habilidades.compressed
+				button.toggle Habilidades
+				mixin pontos(nome, id)
+					div.pontos
+						h3= nome
+						.counter
+							button.menos -
+							span.ponto(id=id) 0
+							button.mais +
+				h2 Talentos
+				+pontos('Prontidão','prontidao')
+				+pontos('Esportes','esportes')
+				+pontos('Briga','briga')
+				+pontos('Esquiva','esquiva')
+				+pontos('Empatia','empatia')
+				+pontos('Expressão','expressao')
+				+pontos('Intimidação','intimidacao')
+				+pontos('Liderança','lideranca')
+				+pontos('Manha','manha')
+				+pontos('Lábia','labia')
+				h2 Perícias
+				+pontos('Emp. com animais','emp_animais')
+				+pontos('Ofícios','oficios')
+				+pontos('Condução','conducao')
+				+pontos('Etiqueta','etiqueta')
+				+pontos('Armas de fogo','armas_fogo')
+				+pontos('Armas Brancas','armas_brancas')
+				+pontos('Performance','performance')
+				+pontos('Segurança','seguranca')
+				+pontos('Furtividade','furtividade')
+				+pontos('Sobrevivência','sobrevivencia')
+				h2 Conhecimentos
+				+pontos('Acadêmicos','academicos')
+				+pontos('Computador','computador')
+				+pontos('Finanças','financas')
+				+pontos('Investigação','investigacao')
+				+pontos('Direito','direito')
+				+pontos('Linguistica','linguistica')
+				+pontos('Medicina','medicina')
+				+pontos('Ocultismo','ocultismo')
+				+pontos('Política','politics')
+				+pontos('Ciência','ciencia')
+		script(type='text/javascript', src='umbrella.min.js')
+		script(type='text/javascript', src='save.js')
+
+

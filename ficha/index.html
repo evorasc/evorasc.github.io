@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Ficha de Vampiro: A máscara</title>
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body onload="fill()">
+    <button class="save">SALVAR</button>
+    <div class="wrapper">
+      <section class="title"><img src="logo-red.png" alt="">
+        <h1 id="charTitle">Ficha de personagem</h1>
+      </section>
+      <section class="card dados compressed">
+        <button class="toggle">Dados</button>
+        <input id="personagem" type="text" placeholder="Personagem">
+        <input id="jogador" type="text" placeholder="Jogador">
+        <input id="cronica" type="text" placeholder="Crônica">
+        <input id="natureza" type="text" placeholder="Natureza">
+        <input id="comportamento" type="text" placeholder="Comportamento">
+        <input id="cla" type="text" placeholder="Clã">
+        <input id="geracao" type="tel" placeholder="Geração">
+        <input id="senhor" type="text" placeholder="Senhor">
+        <input id="conceito" type="text" placeholder="Conceito">
+      </section>
+      <section class="card atributos compressed">
+        <button class="toggle">Atributos</button>
+        <h2>Físicos</h2>
+                <div class="pontos">
+                  <h3>Força</h3>
+                  <div class="counter">
+                    <button class="menos">-</button><span class="ponto" id="forca">0</span>
+                    <button class="mais">+</button>
+                  </div>
+                </div>
+                <div class="pontos">
+                  <h3>Destreza</h3>
+                  <div class="counter">
+                    <button class="menos">-</button><span class="ponto" id="destreza">0</span>
+                    <button class="mais">+</button>
+                  </div>
+                </div>
+                <div class="pontos">
+                  <h3>Vigor</h3>
+                  <div class="counter">
+                    <button class="menos">-</button><span class="ponto" id="vigor">0</span>
+                    <button class="mais">+</button>
+                  </div>
+                </div>
+        <h2>Sociais</h2>
+                <div class="pontos">
+                  <h3>Carisma</h3>
+                  <div class="counter">
+                    <button class="menos">-</button><span class="ponto" id="carisma">0</span>
+                    <button class="mais">+</button>
+                  </div>
+                </div>
+                <div class="pontos">
+                  <h3>Manipulação</h3>
+                  <div class="counter">
+                    <button class="menos">-</button><span class="ponto" id="maniplulacao">0</span>
+                    <button class="mais">+</button>
+                  </div>
+                </div>
+                <div class="pontos">
+                  <h3>Aparência</h3>
+                  <div class="counter">
+                    <button class="menos">-</button><span class="ponto" id="aparencia">0</span>
+                    <button class="mais">+</button>
+                  </div>
+                </div>
+        <h2>Mentais</h2>
+                <div class="pontos">
+                  <h3>Percepção</h3>
+                  <div class="counter">
+                    <button class="menos">-</button><span class="ponto" id="percepcao">0</span>
+                    <button class="mais">+</button>
+                  </div>
+                </div>
+                <div class="pontos">
+                  <h3>Inteligência</h3>
+                  <div class="counter">
+                    <button class="menos">-</button><span class="ponto" id="inteligencia">0</span>
+                    <button class="mais">+</button>
+                  </div>
+                </div>
+                <div class="pontos">
+                  <h3>Raciocínio</h3>
+                  <div class="counter">
+                    <button class="menos">-</button><span class="ponto" id="raciocinio">0</span>
+                    <button class="mais">+</button>
+                  </div>
+                </div>
+      </section>
+      <section class="card habilidades compressed">
+        <button class="toggle">Habilidades</button>
+        <h2>Talentos</h2>
+                <div class="pontos">
+                  <h3>Prontidão</h3>
+                  <div class="counter">
+                    <button class="menos">-</button><span class="ponto" id="prontidao">0</span>
+                    <button class="mais">+</button>
+                  </div>
+                </div>
+                <div class="pontos">
+                  <h3>Esportes</h3>
+                  <div class="counter">
+                    <button class="menos">-</button><span class="ponto" id="esportes">0</span>
+                    <button class="mais">+</button>
+                  </div>
+                </div>
+                <div class="pontos">
+                  <h3>Briga</h3>
+                  <div class="counter">
+                    <button class="menos">-</button><span class="ponto" id="briga">0</span>
+                    <button class="mais">+</button>
+                  </div>
+                </div>
+                <div class="pontos">
+                  <h3>Esquiva</h3>
+                  <div class="counter">
+                    <button class="menos">-</button><span class="ponto" id="esquiva">0</span>
+                    <button class="mais">+</button>
+                  </div>
+                </div>
+                <div class="pontos">
+                  <h3>Empatia</h3>
+                  <div class="counter">
+                    <button class="menos">-</button><span class="ponto" id="empatia">0</span>
+                    <button class="mais">+</button>
+                  </div>
+                </div>
+                <div class="pontos">
+                  <h3>Expressão</h3>
+                  <div class="counter">
+                    <button class="menos">-</button><span class="ponto" id="expressao">0</span>
+                    <button class="mais">+</button>
+                  </div>
+                </div>
+                <div class="pontos">
+                  <h3>Intimidação</h3>
+                  <div class="counter">
+                    <button class="menos">-</button><span class="ponto" id="intimidacao">0</span>
+                    <button class="mais">+</button>
+                  </div>
+                </div>
+                <div class="pontos">
+                  <h3>Liderança</h3>
+                  <div class="counter">
+                    <button class="menos">-</button><span class="ponto" id="lideranca">0</span>
+                    <button class="mais">+</button>
+                  </div>
+                </div>
+                <div class="pontos">
+                  <h3>Manha</h3>
+                  <div class="counter">
+                    <button class="menos">-</button><span class="ponto" id="manha">0</span>
+                    <button class="mais">+</button>
+                  </div>
+                </div>
+                <div class="pontos">
+                  <h3>Lábia</h3>
+                  <div class="counter">
+                    <button class="menos">-</button><span class="ponto" id="labia">0</span>
+                    <button class="mais">+</button>
+                  </div>
+                </div>
+        <h2>Perícias</h2>
+                <div class="pontos">
+                  <h3>Emp. com animais</h3>
+                  <div class="counter">
+                    <button class="menos">-</button><span class="ponto" id="emp_animais">0</span>
+                    <button class="mais">+</button>
+                  </div>
+                </div>
+                <div class="pontos">
+                  <h3>Ofícios</h3>
+                  <div class="counter">
+                    <button class="menos">-</button><span class="ponto" id="oficios">0</span>
+                    <button class="mais">+</button>
+                  </div>
+                </div>
+                <div class="pontos">
+                  <h3>Condução</h3>
+                  <div class="counter">
+                    <button class="menos">-</button><span class="ponto" id="conducao">0</span>
+                    <button class="mais">+</button>
+                  </div>
+                </div>
+                <div class="pontos">
+                  <h3>Etiqueta</h3>
+                  <div class="counter">
+                    <button class="menos">-</button><span class="ponto" id="etiqueta">0</span>
+                    <button class="mais">+</button>
+                  </div>
+                </div>
+                <div class="pontos">
+                  <h3>Armas de fogo</h3>
+                  <div class="counter">
+                    <button class="menos">-</button><span class="ponto" id="armas_fogo">0</span>
+                    <button class="mais">+</button>
+                  </div>
+                </div>
+                <div class="pontos">
+                  <h3>Armas Brancas</h3>
+                  <div class="counter">
+                    <button class="menos">-</button><span class="ponto" id="armas_brancas">0</span>
+                    <button class="mais">+</button>
+                  </div>
+                </div>
+                <div class="pontos">
+                  <h3>Performance</h3>
+                  <div class="counter">
+                    <button class="menos">-</button><span class="ponto" id="performance">0</span>
+                    <button class="mais">+</button>
+                  </div>
+                </div>
+                <div class="pontos">
+                  <h3>Segurança</h3>
+                  <div class="counter">
+                    <button class="menos">-</button><span class="ponto" id="seguranca">0</span>
+                    <button class="mais">+</button>
+                  </div>
+                </div>
+                <div class="pontos">
+                  <h3>Furtividade</h3>
+                  <div class="counter">
+                    <button class="menos">-</button><span class="ponto" id="furtividade">0</span>
+                    <button class="mais">+</button>
+                  </div>
+                </div>
+                <div class="pontos">
+                  <h3>Sobrevivência</h3>
+                  <div class="counter">
+                    <button class="menos">-</button><span class="ponto" id="sobrevivencia">0</span>
+                    <button class="mais">+</button>
+                  </div>
+                </div>
+        <h2>Conhecimentos</h2>
+                <div class="pontos">
+                  <h3>Acadêmicos</h3>
+                  <div class="counter">
+                    <button class="menos">-</button><span class="ponto" id="academicos">0</span>
+                    <button class="mais">+</button>
+                  </div>
+                </div>
+                <div class="pontos">
+                  <h3>Computador</h3>
+                  <div class="counter">
+                    <button class="menos">-</button><span class="ponto" id="computador">0</span>
+                    <button class="mais">+</button>
+                  </div>
+                </div>
+                <div class="pontos">
+                  <h3>Finanças</h3>
+                  <div class="counter">
+                    <button class="menos">-</button><span class="ponto" id="financas">0</span>
+                    <button class="mais">+</button>
+                  </div>
+                </div>
+                <div class="pontos">
+                  <h3>Investigação</h3>
+                  <div class="counter">
+                    <button class="menos">-</button><span class="ponto" id="investigacao">0</span>
+                    <button class="mais">+</button>
+                  </div>
+                </div>
+                <div class="pontos">
+                  <h3>Direito</h3>
+                  <div class="counter">
+                    <button class="menos">-</button><span class="ponto" id="direito">0</span>
+                    <button class="mais">+</button>
+                  </div>
+                </div>
+                <div class="pontos">
+                  <h3>Linguistica</h3>
+                  <div class="counter">
+                    <button class="menos">-</button><span class="ponto" id="linguistica">0</span>
+                    <button class="mais">+</button>
+                  </div>
+                </div>
+                <div class="pontos">
+                  <h3>Medicina</h3>
+                  <div class="counter">
+                    <button class="menos">-</button><span class="ponto" id="medicina">0</span>
+                    <button class="mais">+</button>
+                  </div>
+                </div>
+                <div class="pontos">
+                  <h3>Ocultismo</h3>
+                  <div class="counter">
+                    <button class="menos">-</button><span class="ponto" id="ocultismo">0</span>
+                    <button class="mais">+</button>
+                  </div>
+                </div>
+                <div class="pontos">
+                  <h3>Política</h3>
+                  <div class="counter">
+                    <button class="menos">-</button><span class="ponto" id="politics">0</span>
+                    <button class="mais">+</button>
+                  </div>
+                </div>
+                <div class="pontos">
+                  <h3>Ciência</h3>
+                  <div class="counter">
+                    <button class="menos">-</button><span class="ponto" id="ciencia">0</span>
+                    <button class="mais">+</button>
+                  </div>
+                </div>
+      </section>
+    </div>
+    <script type="text/javascript" src="umbrella.min.js"></script>
+    <script type="text/javascript" src="save.js"></script>
+  </body>
+</html>
