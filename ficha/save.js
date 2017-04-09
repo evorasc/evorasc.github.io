@@ -14,7 +14,6 @@ u('.save').on('click', function(){
 	u('.card').find('input').each(function(node, i){
 		var id = u(node).attr("id");
 		var valor = document.getElementById(id).value;
-		console.log(id)
 		localStorage.setItem(id, valor);
 	})
 	u('.save').removeClass('save-active')
@@ -55,6 +54,7 @@ function fill() {
 		var valor = localStorage.getItem(id);
 		document.getElementById(id).value = valor;
 	})
+
 	// fill experience points
 	u('.card').find('.ponto').each(function(node, i){
 		var id = u(node).attr("id");
