@@ -15,300 +15,654 @@
       </section>
       <section class="card dados compressed">
         <button class="toggle">Dados</button>
+        <label>Personagem</label>
         <input id="personagem" type="text" placeholder="Personagem">
+        <label>Jogador</label>
         <input id="jogador" type="text" placeholder="Jogador">
+        <label>Crônica</label>
         <input id="cronica" type="text" placeholder="Crônica">
+        <label>Natureza</label>
         <input id="natureza" type="text" placeholder="Natureza">
+        <label>Comportamento</label>
         <input id="comportamento" type="text" placeholder="Comportamento">
+        <label>Clã</label>
         <input id="cla" type="text" placeholder="Clã">
+        <label>Geração</label>
         <input id="geracao" type="tel" placeholder="Geração">
+        <label>Senhor</label>
         <input id="senhor" type="text" placeholder="Senhor">
+        <label>Conceito</label>
         <input id="conceito" type="text" placeholder="Conceito">
       </section>
       <section class="card atributos compressed">
         <button class="toggle">Atributos</button>
-        <h2>Físicos</h2>
-                <div class="pontos">
-                  <h3>Força</h3>
-                  <div class="counter">
-                    <button class="menos">-</button><span class="ponto" id="forca">0</span>
-                    <button class="mais">+</button>
+        <div class="compressed">
+          <h2>Físicos</h2>
+                  <div class="pontos">
+                    <h3>Força</h3>
+                    <div class="counter">
+                      <button class="menos">-</button><span class="ponto" id="forca">0</span>
+                      <button class="mais">+</button>
+                    </div>
                   </div>
-                </div>
-                <div class="pontos">
-                  <h3>Destreza</h3>
-                  <div class="counter">
-                    <button class="menos">-</button><span class="ponto" id="destreza">0</span>
-                    <button class="mais">+</button>
+                  <div class="pontos">
+                    <h3>Destreza</h3>
+                    <div class="counter">
+                      <button class="menos">-</button><span class="ponto" id="destreza">0</span>
+                      <button class="mais">+</button>
+                    </div>
                   </div>
-                </div>
-                <div class="pontos">
-                  <h3>Vigor</h3>
-                  <div class="counter">
-                    <button class="menos">-</button><span class="ponto" id="vigor">0</span>
-                    <button class="mais">+</button>
+                  <div class="pontos">
+                    <h3>Vigor</h3>
+                    <div class="counter">
+                      <button class="menos">-</button><span class="ponto" id="vigor">0</span>
+                      <button class="mais">+</button>
+                    </div>
                   </div>
-                </div>
-        <h2>Sociais</h2>
-                <div class="pontos">
-                  <h3>Carisma</h3>
-                  <div class="counter">
-                    <button class="menos">-</button><span class="ponto" id="carisma">0</span>
-                    <button class="mais">+</button>
+        </div>
+        <div class="compressed">
+          <h2>Sociais</h2>
+                  <div class="pontos">
+                    <h3>Carisma</h3>
+                    <div class="counter">
+                      <button class="menos">-</button><span class="ponto" id="carisma">0</span>
+                      <button class="mais">+</button>
+                    </div>
                   </div>
-                </div>
-                <div class="pontos">
-                  <h3>Manipulação</h3>
-                  <div class="counter">
-                    <button class="menos">-</button><span class="ponto" id="maniplulacao">0</span>
-                    <button class="mais">+</button>
+                  <div class="pontos">
+                    <h3>Manipulação</h3>
+                    <div class="counter">
+                      <button class="menos">-</button><span class="ponto" id="maniplulacao">0</span>
+                      <button class="mais">+</button>
+                    </div>
                   </div>
-                </div>
-                <div class="pontos">
-                  <h3>Aparência</h3>
-                  <div class="counter">
-                    <button class="menos">-</button><span class="ponto" id="aparencia">0</span>
-                    <button class="mais">+</button>
+                  <div class="pontos">
+                    <h3>Aparência</h3>
+                    <div class="counter">
+                      <button class="menos">-</button><span class="ponto" id="aparencia">0</span>
+                      <button class="mais">+</button>
+                    </div>
                   </div>
-                </div>
-        <h2>Mentais</h2>
-                <div class="pontos">
-                  <h3>Percepção</h3>
-                  <div class="counter">
-                    <button class="menos">-</button><span class="ponto" id="percepcao">0</span>
-                    <button class="mais">+</button>
+        </div>
+        <div class="compressed">
+          <h2>Mentais</h2>
+                  <div class="pontos">
+                    <h3>Percepção</h3>
+                    <div class="counter">
+                      <button class="menos">-</button><span class="ponto" id="percepcao">0</span>
+                      <button class="mais">+</button>
+                    </div>
                   </div>
-                </div>
-                <div class="pontos">
-                  <h3>Inteligência</h3>
-                  <div class="counter">
-                    <button class="menos">-</button><span class="ponto" id="inteligencia">0</span>
-                    <button class="mais">+</button>
+                  <div class="pontos">
+                    <h3>Inteligência</h3>
+                    <div class="counter">
+                      <button class="menos">-</button><span class="ponto" id="inteligencia">0</span>
+                      <button class="mais">+</button>
+                    </div>
                   </div>
-                </div>
-                <div class="pontos">
-                  <h3>Raciocínio</h3>
-                  <div class="counter">
-                    <button class="menos">-</button><span class="ponto" id="raciocinio">0</span>
-                    <button class="mais">+</button>
+                  <div class="pontos">
+                    <h3>Raciocínio</h3>
+                    <div class="counter">
+                      <button class="menos">-</button><span class="ponto" id="raciocinio">0</span>
+                      <button class="mais">+</button>
+                    </div>
                   </div>
-                </div>
+        </div>
       </section>
       <section class="card habilidades compressed">
         <button class="toggle">Habilidades</button>
-        <h2>Talentos</h2>
-                <div class="pontos">
-                  <h3>Prontidão</h3>
-                  <div class="counter">
-                    <button class="menos">-</button><span class="ponto" id="prontidao">0</span>
-                    <button class="mais">+</button>
+        <div class="compressed">
+          <h2>Talentos</h2>
+                  <div class="pontos">
+                    <h3>Prontidão</h3>
+                    <div class="counter">
+                      <button class="menos">-</button><span class="ponto" id="prontidao">0</span>
+                      <button class="mais">+</button>
+                    </div>
                   </div>
-                </div>
-                <div class="pontos">
-                  <h3>Esportes</h3>
-                  <div class="counter">
-                    <button class="menos">-</button><span class="ponto" id="esportes">0</span>
-                    <button class="mais">+</button>
+                  <div class="pontos">
+                    <h3>Esportes</h3>
+                    <div class="counter">
+                      <button class="menos">-</button><span class="ponto" id="esportes">0</span>
+                      <button class="mais">+</button>
+                    </div>
                   </div>
-                </div>
-                <div class="pontos">
-                  <h3>Briga</h3>
-                  <div class="counter">
-                    <button class="menos">-</button><span class="ponto" id="briga">0</span>
-                    <button class="mais">+</button>
+                  <div class="pontos">
+                    <h3>Briga</h3>
+                    <div class="counter">
+                      <button class="menos">-</button><span class="ponto" id="briga">0</span>
+                      <button class="mais">+</button>
+                    </div>
                   </div>
-                </div>
-                <div class="pontos">
-                  <h3>Esquiva</h3>
-                  <div class="counter">
-                    <button class="menos">-</button><span class="ponto" id="esquiva">0</span>
-                    <button class="mais">+</button>
+                  <div class="pontos">
+                    <h3>Esquiva</h3>
+                    <div class="counter">
+                      <button class="menos">-</button><span class="ponto" id="esquiva">0</span>
+                      <button class="mais">+</button>
+                    </div>
                   </div>
-                </div>
-                <div class="pontos">
-                  <h3>Empatia</h3>
-                  <div class="counter">
-                    <button class="menos">-</button><span class="ponto" id="empatia">0</span>
-                    <button class="mais">+</button>
+                  <div class="pontos">
+                    <h3>Empatia</h3>
+                    <div class="counter">
+                      <button class="menos">-</button><span class="ponto" id="empatia">0</span>
+                      <button class="mais">+</button>
+                    </div>
                   </div>
-                </div>
-                <div class="pontos">
-                  <h3>Expressão</h3>
-                  <div class="counter">
-                    <button class="menos">-</button><span class="ponto" id="expressao">0</span>
-                    <button class="mais">+</button>
+                  <div class="pontos">
+                    <h3>Expressão</h3>
+                    <div class="counter">
+                      <button class="menos">-</button><span class="ponto" id="expressao">0</span>
+                      <button class="mais">+</button>
+                    </div>
                   </div>
-                </div>
-                <div class="pontos">
-                  <h3>Intimidação</h3>
-                  <div class="counter">
-                    <button class="menos">-</button><span class="ponto" id="intimidacao">0</span>
-                    <button class="mais">+</button>
+                  <div class="pontos">
+                    <h3>Intimidação</h3>
+                    <div class="counter">
+                      <button class="menos">-</button><span class="ponto" id="intimidacao">0</span>
+                      <button class="mais">+</button>
+                    </div>
                   </div>
-                </div>
-                <div class="pontos">
-                  <h3>Liderança</h3>
-                  <div class="counter">
-                    <button class="menos">-</button><span class="ponto" id="lideranca">0</span>
-                    <button class="mais">+</button>
+                  <div class="pontos">
+                    <h3>Liderança</h3>
+                    <div class="counter">
+                      <button class="menos">-</button><span class="ponto" id="lideranca">0</span>
+                      <button class="mais">+</button>
+                    </div>
                   </div>
-                </div>
-                <div class="pontos">
-                  <h3>Manha</h3>
-                  <div class="counter">
-                    <button class="menos">-</button><span class="ponto" id="manha">0</span>
-                    <button class="mais">+</button>
+                  <div class="pontos">
+                    <h3>Manha</h3>
+                    <div class="counter">
+                      <button class="menos">-</button><span class="ponto" id="manha">0</span>
+                      <button class="mais">+</button>
+                    </div>
                   </div>
-                </div>
-                <div class="pontos">
-                  <h3>Lábia</h3>
-                  <div class="counter">
-                    <button class="menos">-</button><span class="ponto" id="labia">0</span>
-                    <button class="mais">+</button>
+                  <div class="pontos">
+                    <h3>Lábia</h3>
+                    <div class="counter">
+                      <button class="menos">-</button><span class="ponto" id="labia">0</span>
+                      <button class="mais">+</button>
+                    </div>
                   </div>
-                </div>
-        <h2>Perícias</h2>
-                <div class="pontos">
-                  <h3>Emp. com animais</h3>
-                  <div class="counter">
-                    <button class="menos">-</button><span class="ponto" id="emp_animais">0</span>
-                    <button class="mais">+</button>
+        </div>
+        <div class="compressed">
+          <h2>Perícias</h2>
+                  <div class="pontos">
+                    <h3>Emp. com animais</h3>
+                    <div class="counter">
+                      <button class="menos">-</button><span class="ponto" id="emp_animais">0</span>
+                      <button class="mais">+</button>
+                    </div>
                   </div>
-                </div>
-                <div class="pontos">
-                  <h3>Ofícios</h3>
-                  <div class="counter">
-                    <button class="menos">-</button><span class="ponto" id="oficios">0</span>
-                    <button class="mais">+</button>
+                  <div class="pontos">
+                    <h3>Ofícios</h3>
+                    <div class="counter">
+                      <button class="menos">-</button><span class="ponto" id="oficios">0</span>
+                      <button class="mais">+</button>
+                    </div>
                   </div>
-                </div>
-                <div class="pontos">
-                  <h3>Condução</h3>
-                  <div class="counter">
-                    <button class="menos">-</button><span class="ponto" id="conducao">0</span>
-                    <button class="mais">+</button>
+                  <div class="pontos">
+                    <h3>Condução</h3>
+                    <div class="counter">
+                      <button class="menos">-</button><span class="ponto" id="conducao">0</span>
+                      <button class="mais">+</button>
+                    </div>
                   </div>
-                </div>
-                <div class="pontos">
-                  <h3>Etiqueta</h3>
-                  <div class="counter">
-                    <button class="menos">-</button><span class="ponto" id="etiqueta">0</span>
-                    <button class="mais">+</button>
+                  <div class="pontos">
+                    <h3>Etiqueta</h3>
+                    <div class="counter">
+                      <button class="menos">-</button><span class="ponto" id="etiqueta">0</span>
+                      <button class="mais">+</button>
+                    </div>
                   </div>
-                </div>
-                <div class="pontos">
-                  <h3>Armas de fogo</h3>
-                  <div class="counter">
-                    <button class="menos">-</button><span class="ponto" id="armas_fogo">0</span>
-                    <button class="mais">+</button>
+                  <div class="pontos">
+                    <h3>Armas de fogo</h3>
+                    <div class="counter">
+                      <button class="menos">-</button><span class="ponto" id="armas_fogo">0</span>
+                      <button class="mais">+</button>
+                    </div>
                   </div>
-                </div>
-                <div class="pontos">
-                  <h3>Armas Brancas</h3>
-                  <div class="counter">
-                    <button class="menos">-</button><span class="ponto" id="armas_brancas">0</span>
-                    <button class="mais">+</button>
+                  <div class="pontos">
+                    <h3>Armas Brancas</h3>
+                    <div class="counter">
+                      <button class="menos">-</button><span class="ponto" id="armas_brancas">0</span>
+                      <button class="mais">+</button>
+                    </div>
                   </div>
-                </div>
-                <div class="pontos">
-                  <h3>Performance</h3>
-                  <div class="counter">
-                    <button class="menos">-</button><span class="ponto" id="performance">0</span>
-                    <button class="mais">+</button>
+                  <div class="pontos">
+                    <h3>Performance</h3>
+                    <div class="counter">
+                      <button class="menos">-</button><span class="ponto" id="performance">0</span>
+                      <button class="mais">+</button>
+                    </div>
                   </div>
-                </div>
-                <div class="pontos">
-                  <h3>Segurança</h3>
-                  <div class="counter">
-                    <button class="menos">-</button><span class="ponto" id="seguranca">0</span>
-                    <button class="mais">+</button>
+                  <div class="pontos">
+                    <h3>Segurança</h3>
+                    <div class="counter">
+                      <button class="menos">-</button><span class="ponto" id="seguranca">0</span>
+                      <button class="mais">+</button>
+                    </div>
                   </div>
-                </div>
-                <div class="pontos">
-                  <h3>Furtividade</h3>
-                  <div class="counter">
-                    <button class="menos">-</button><span class="ponto" id="furtividade">0</span>
-                    <button class="mais">+</button>
+                  <div class="pontos">
+                    <h3>Furtividade</h3>
+                    <div class="counter">
+                      <button class="menos">-</button><span class="ponto" id="furtividade">0</span>
+                      <button class="mais">+</button>
+                    </div>
                   </div>
-                </div>
-                <div class="pontos">
-                  <h3>Sobrevivência</h3>
-                  <div class="counter">
-                    <button class="menos">-</button><span class="ponto" id="sobrevivencia">0</span>
-                    <button class="mais">+</button>
+                  <div class="pontos">
+                    <h3>Sobrevivência</h3>
+                    <div class="counter">
+                      <button class="menos">-</button><span class="ponto" id="sobrevivencia">0</span>
+                      <button class="mais">+</button>
+                    </div>
                   </div>
-                </div>
-        <h2>Conhecimentos</h2>
-                <div class="pontos">
-                  <h3>Acadêmicos</h3>
-                  <div class="counter">
-                    <button class="menos">-</button><span class="ponto" id="academicos">0</span>
-                    <button class="mais">+</button>
+        </div>
+        <div class="compressed">
+          <h2>Conhecimentos</h2>
+                  <div class="pontos">
+                    <h3>Acadêmicos</h3>
+                    <div class="counter">
+                      <button class="menos">-</button><span class="ponto" id="academicos">0</span>
+                      <button class="mais">+</button>
+                    </div>
                   </div>
-                </div>
-                <div class="pontos">
-                  <h3>Computador</h3>
-                  <div class="counter">
-                    <button class="menos">-</button><span class="ponto" id="computador">0</span>
-                    <button class="mais">+</button>
+                  <div class="pontos">
+                    <h3>Computador</h3>
+                    <div class="counter">
+                      <button class="menos">-</button><span class="ponto" id="computador">0</span>
+                      <button class="mais">+</button>
+                    </div>
                   </div>
-                </div>
-                <div class="pontos">
-                  <h3>Finanças</h3>
-                  <div class="counter">
-                    <button class="menos">-</button><span class="ponto" id="financas">0</span>
-                    <button class="mais">+</button>
+                  <div class="pontos">
+                    <h3>Finanças</h3>
+                    <div class="counter">
+                      <button class="menos">-</button><span class="ponto" id="financas">0</span>
+                      <button class="mais">+</button>
+                    </div>
                   </div>
-                </div>
-                <div class="pontos">
-                  <h3>Investigação</h3>
-                  <div class="counter">
-                    <button class="menos">-</button><span class="ponto" id="investigacao">0</span>
-                    <button class="mais">+</button>
+                  <div class="pontos">
+                    <h3>Investigação</h3>
+                    <div class="counter">
+                      <button class="menos">-</button><span class="ponto" id="investigacao">0</span>
+                      <button class="mais">+</button>
+                    </div>
                   </div>
-                </div>
-                <div class="pontos">
-                  <h3>Direito</h3>
-                  <div class="counter">
-                    <button class="menos">-</button><span class="ponto" id="direito">0</span>
-                    <button class="mais">+</button>
+                  <div class="pontos">
+                    <h3>Direito</h3>
+                    <div class="counter">
+                      <button class="menos">-</button><span class="ponto" id="direito">0</span>
+                      <button class="mais">+</button>
+                    </div>
                   </div>
-                </div>
-                <div class="pontos">
-                  <h3>Linguistica</h3>
-                  <div class="counter">
-                    <button class="menos">-</button><span class="ponto" id="linguistica">0</span>
-                    <button class="mais">+</button>
+                  <div class="pontos">
+                    <h3>Linguistica</h3>
+                    <div class="counter">
+                      <button class="menos">-</button><span class="ponto" id="linguistica">0</span>
+                      <button class="mais">+</button>
+                    </div>
                   </div>
-                </div>
-                <div class="pontos">
-                  <h3>Medicina</h3>
-                  <div class="counter">
-                    <button class="menos">-</button><span class="ponto" id="medicina">0</span>
-                    <button class="mais">+</button>
+                  <div class="pontos">
+                    <h3>Medicina</h3>
+                    <div class="counter">
+                      <button class="menos">-</button><span class="ponto" id="medicina">0</span>
+                      <button class="mais">+</button>
+                    </div>
                   </div>
-                </div>
-                <div class="pontos">
-                  <h3>Ocultismo</h3>
-                  <div class="counter">
-                    <button class="menos">-</button><span class="ponto" id="ocultismo">0</span>
-                    <button class="mais">+</button>
+                  <div class="pontos">
+                    <h3>Ocultismo</h3>
+                    <div class="counter">
+                      <button class="menos">-</button><span class="ponto" id="ocultismo">0</span>
+                      <button class="mais">+</button>
+                    </div>
                   </div>
-                </div>
-                <div class="pontos">
-                  <h3>Política</h3>
-                  <div class="counter">
-                    <button class="menos">-</button><span class="ponto" id="politics">0</span>
-                    <button class="mais">+</button>
+                  <div class="pontos">
+                    <h3>Política</h3>
+                    <div class="counter">
+                      <button class="menos">-</button><span class="ponto" id="politics">0</span>
+                      <button class="mais">+</button>
+                    </div>
                   </div>
-                </div>
-                <div class="pontos">
-                  <h3>Ciência</h3>
-                  <div class="counter">
-                    <button class="menos">-</button><span class="ponto" id="ciencia">0</span>
-                    <button class="mais">+</button>
+                  <div class="pontos">
+                    <h3>Ciência</h3>
+                    <div class="counter">
+                      <button class="menos">-</button><span class="ponto" id="ciencia">0</span>
+                      <button class="mais">+</button>
+                    </div>
                   </div>
-                </div>
+        </div>
+      </section>
+      <section class="card vantagens">
+        <button class="toggle">Vantagens</button>
+        <div>
+          <h2>Antecedentes</h2>
+          <div class="select compressed">
+            <label class="select">-- Selecione seus antecedentes</label>
+            <p class="option" id="label_aliados" data-option="aliados">Aliados</p>
+            <p class="option" id="label_contatos" data-option="contatos">Contatos</p>
+            <p class="option" id="label_fama" data-option="fama">Fama</p>
+            <p class="option" id="label_geracao" data-option="geracao-ant">Geração</p>
+            <p class="option" id="label_rebanho" data-option="rebanho">Rebanho</p>
+            <p class="option" id="label_influencia" data-option="influencia">Influência</p>
+            <p class="option" id="label_mentor" data-option="mentor">Mentor</p>
+            <p class="option" id="label_recursos" data-option="recursos">Recursos</p>
+            <p class="option" id="label_lacaios" data-option="lacaios">Lacaios</p>
+            <p class="option" id="label_status" data-option="status">Status</p>
+          </div>
+          <div class="hide">
+                    <div class="pontos">
+                      <h3>Aliados</h3>
+                      <div class="counter">
+                        <button class="menos">-</button><span class="ponto" id="aliados">0</span>
+                        <button class="mais">+</button>
+                      </div>
+                    </div>
+          </div>
+          <div class="hide">
+                    <div class="pontos">
+                      <h3>Contatos</h3>
+                      <div class="counter">
+                        <button class="menos">-</button><span class="ponto" id="contatos">0</span>
+                        <button class="mais">+</button>
+                      </div>
+                    </div>
+          </div>
+          <div class="hide">
+                    <div class="pontos">
+                      <h3>Fama</h3>
+                      <div class="counter">
+                        <button class="menos">-</button><span class="ponto" id="fama">0</span>
+                        <button class="mais">+</button>
+                      </div>
+                    </div>
+          </div>
+          <div class="hide">
+                    <div class="pontos">
+                      <h3>Geração</h3>
+                      <div class="counter">
+                        <button class="menos">-</button><span class="ponto" id="geracao-ant">0</span>
+                        <button class="mais">+</button>
+                      </div>
+                    </div>
+          </div>
+          <div class="hide">
+                    <div class="pontos">
+                      <h3>Rebanho</h3>
+                      <div class="counter">
+                        <button class="menos">-</button><span class="ponto" id="rebanho">0</span>
+                        <button class="mais">+</button>
+                      </div>
+                    </div>
+          </div>
+          <div class="hide">
+                    <div class="pontos">
+                      <h3>Influência</h3>
+                      <div class="counter">
+                        <button class="menos">-</button><span class="ponto" id="influencia">0</span>
+                        <button class="mais">+</button>
+                      </div>
+                    </div>
+          </div>
+          <div class="hide">
+                    <div class="pontos">
+                      <h3>Mentor</h3>
+                      <div class="counter">
+                        <button class="menos">-</button><span class="ponto" id="mentor">0</span>
+                        <button class="mais">+</button>
+                      </div>
+                    </div>
+          </div>
+          <div class="hide">
+                    <div class="pontos">
+                      <h3>Recursos</h3>
+                      <div class="counter">
+                        <button class="menos">-</button><span class="ponto" id="recursos">0</span>
+                        <button class="mais">+</button>
+                      </div>
+                    </div>
+          </div>
+          <div class="hide">
+                    <div class="pontos">
+                      <h3>Lacaios</h3>
+                      <div class="counter">
+                        <button class="menos">-</button><span class="ponto" id="lacaios">0</span>
+                        <button class="mais">+</button>
+                      </div>
+                    </div>
+          </div>
+          <div class="hide">
+                    <div class="pontos">
+                      <h3>Status</h3>
+                      <div class="counter">
+                        <button class="menos">-</button><span class="ponto" id="status">0</span>
+                        <button class="mais">+</button>
+                      </div>
+                    </div>
+          </div>
+        </div>
+        <div>
+          <h2>Disciplinas</h2>
+          <div class="select compressed">
+            <label class="select">-- Selecione suas Disciplinas</label>
+            <p class="sub">Básicas</p>
+            <p class="option" id="label_animalismo" data-option="animalismo">Animalismo</p>
+            <p class="option" id="label_auspicios" data-option="auspicios">Auspicios</p>
+            <p class="option" id="label_dominacao" data-option="dominacao">Dominacao</p>
+            <p class="option" id="label_fortitude" data-option="fortitude">Fortitude</p>
+            <p class="option" id="label_ofuscacao" data-option="ofuscacao">Ofuscação</p>
+            <p class="option" id="label_potencia" data-option="potencia">Potência</p>
+            <p class="option" id="label_presenca" data-option="presenca">Presenca</p>
+            <p class="option" id="label_rapidez" data-option="rapidez">Rapidez</p>
+            <p class="sub">Específica de clãs</p>
+            <p class="option" id="label_demencia" data-option="demencia">Demência</p>
+            <p class="option" id="label_metamorfose" data-option="metamorfose">Metamorfose</p>
+            <p class="option" id="label_mortis" data-option="mortis">Mortis</p>
+            <p class="option" id="label_necromancia" data-option="necromancia">Necromancia</p>
+            <p class="option" id="label_quietus" data-option="quietus">Quietus</p>
+            <p class="option" id="label_quimerismo" data-option="quimerismo">Quimerismo</p>
+            <p class="option" id="label_serpentis" data-option="serpentis">Serpentis</p>
+            <p class="option" id="label_taumaturgia" data-option="taumaturgia">Taumaturgia</p>
+            <p class="option" id="label_tenebrosidade" data-option="tenebrosidade">Tenebrosidade</p>
+            <p class="option" id="label_vicissitude" data-option="vicissitude">Vicissitude</p>
+            <p class="option" id="label_voudoun" data-option="voudoun">Voudoun</p>
+          </div>
+          <div class="hide">
+                    <div class="pontos">
+                      <h3>Animalismo</h3>
+                      <div class="counter">
+                        <button class="menos">-</button><span class="ponto" id="animalismo">0</span>
+                        <button class="mais">+</button>
+                      </div>
+                    </div>
+          </div>
+          <div class="hide">
+                    <div class="pontos">
+                      <h3>Auspicios</h3>
+                      <div class="counter">
+                        <button class="menos">-</button><span class="ponto" id="auspicios">0</span>
+                        <button class="mais">+</button>
+                      </div>
+                    </div>
+          </div>
+          <div class="hide">
+                    <div class="pontos">
+                      <h3>Dominação</h3>
+                      <div class="counter">
+                        <button class="menos">-</button><span class="ponto" id="dominacao">0</span>
+                        <button class="mais">+</button>
+                      </div>
+                    </div>
+          </div>
+          <div class="hide">
+                    <div class="pontos">
+                      <h3>Fortitude</h3>
+                      <div class="counter">
+                        <button class="menos">-</button><span class="ponto" id="fortitude">0</span>
+                        <button class="mais">+</button>
+                      </div>
+                    </div>
+          </div>
+          <div class="hide">
+                    <div class="pontos">
+                      <h3>Ofuscação</h3>
+                      <div class="counter">
+                        <button class="menos">-</button><span class="ponto" id="ofuscacao">0</span>
+                        <button class="mais">+</button>
+                      </div>
+                    </div>
+          </div>
+          <div class="hide">
+                    <div class="pontos">
+                      <h3>Potência</h3>
+                      <div class="counter">
+                        <button class="menos">-</button><span class="ponto" id="potencia">0</span>
+                        <button class="mais">+</button>
+                      </div>
+                    </div>
+          </div>
+          <div class="hide">
+                    <div class="pontos">
+                      <h3>Presença</h3>
+                      <div class="counter">
+                        <button class="menos">-</button><span class="ponto" id="presenca">0</span>
+                        <button class="mais">+</button>
+                      </div>
+                    </div>
+          </div>
+          <div class="hide">
+                    <div class="pontos">
+                      <h3>Rapidez</h3>
+                      <div class="counter">
+                        <button class="menos">-</button><span class="ponto" id="rapidez">0</span>
+                        <button class="mais">+</button>
+                      </div>
+                    </div>
+          </div>
+          <div class="hide">
+                    <div class="pontos">
+                      <h3>Demência</h3>
+                      <div class="counter">
+                        <button class="menos">-</button><span class="ponto" id="demencia">0</span>
+                        <button class="mais">+</button>
+                      </div>
+                    </div>
+          </div>
+          <div class="hide">
+                    <div class="pontos">
+                      <h3>Metamorfose</h3>
+                      <div class="counter">
+                        <button class="menos">-</button><span class="ponto" id="metamorfose">0</span>
+                        <button class="mais">+</button>
+                      </div>
+                    </div>
+          </div>
+          <div class="hide">
+                    <div class="pontos">
+                      <h3>Mortis</h3>
+                      <div class="counter">
+                        <button class="menos">-</button><span class="ponto" id="mortis">0</span>
+                        <button class="mais">+</button>
+                      </div>
+                    </div>
+          </div>
+          <div class="hide">
+                    <div class="pontos">
+                      <h3>Necromancia</h3>
+                      <div class="counter">
+                        <button class="menos">-</button><span class="ponto" id="necromancia">0</span>
+                        <button class="mais">+</button>
+                      </div>
+                    </div>
+          </div>
+          <div class="hide">
+                    <div class="pontos">
+                      <h3>Quietus</h3>
+                      <div class="counter">
+                        <button class="menos">-</button><span class="ponto" id="quietus">0</span>
+                        <button class="mais">+</button>
+                      </div>
+                    </div>
+          </div>
+          <div class="hide">
+                    <div class="pontos">
+                      <h3>Quimerismo</h3>
+                      <div class="counter">
+                        <button class="menos">-</button><span class="ponto" id="quimerismo">0</span>
+                        <button class="mais">+</button>
+                      </div>
+                    </div>
+          </div>
+          <div class="hide">
+                    <div class="pontos">
+                      <h3>Serpentis</h3>
+                      <div class="counter">
+                        <button class="menos">-</button><span class="ponto" id="serpentis">0</span>
+                        <button class="mais">+</button>
+                      </div>
+                    </div>
+          </div>
+          <div class="hide">
+                    <div class="pontos">
+                      <h3>Taumaturgia</h3>
+                      <div class="counter">
+                        <button class="menos">-</button><span class="ponto" id="taumaturgia">0</span>
+                        <button class="mais">+</button>
+                      </div>
+                    </div>
+          </div>
+          <div class="hide">
+                    <div class="pontos">
+                      <h3>tenebrosidade</h3>
+                      <div class="counter">
+                        <button class="menos">-</button><span class="ponto" id="tenebrosidade">0</span>
+                        <button class="mais">+</button>
+                      </div>
+                    </div>
+          </div>
+          <div class="hide">
+                    <div class="pontos">
+                      <h3>Vicissitude</h3>
+                      <div class="counter">
+                        <button class="menos">-</button><span class="ponto" id="vicissitude">0</span>
+                        <button class="mais">+</button>
+                      </div>
+                    </div>
+          </div>
+          <div class="hide">
+                    <div class="pontos">
+                      <h3>Voudon</h3>
+                      <div class="counter">
+                        <button class="menos">-</button><span class="ponto" id="voudoun">0</span>
+                        <button class="mais">+</button>
+                      </div>
+                    </div>
+          </div>
+        </div>
+        <div>
+          <div>
+            <h2>Virtudes</h2>
+                    <div class="pontos">
+                      <h3>Consciência</h3>
+                      <div class="counter">
+                        <button class="menos">-</button><span class="ponto" id="consciencia">0</span>
+                        <button class="mais">+</button>
+                      </div>
+                    </div>
+                    <div class="pontos">
+                      <h3>Autocontrole</h3>
+                      <div class="counter">
+                        <button class="menos">-</button><span class="ponto" id="autocontrole">0</span>
+                        <button class="mais">+</button>
+                      </div>
+                    </div>
+                    <div class="pontos">
+                      <h3>Coragem</h3>
+                      <div class="counter">
+                        <button class="menos">-</button><span class="ponto" id="coragem">0</span>
+                        <button class="mais">+</button>
+                      </div>
+                    </div>
+          </div>
+        </div>
       </section>
     </div>
     <script type="text/javascript" src="umbrella.min.js"></script>

@@ -14,14 +14,23 @@ html(lang='en')
 				h1#charTitle Ficha de personagem
 			section.card.dados.compressed
 				button.toggle Dados
+				label Personagem
 				input#personagem(type='text', placeholder='Personagem')
+				label Jogador
 				input#jogador(type='text', placeholder='Jogador')
+				label Crônica
 				input#cronica(type='text', placeholder='Crônica')
+				label Natureza
 				input#natureza(type='text', placeholder='Natureza')
+				label Comportamento
 				input#comportamento(type='text', placeholder='Comportamento')
+				label Clã
 				input#cla(type='text', placeholder='Clã')
+				label Geração
 				input#geracao(type='tel', placeholder='Geração')
+				label Senhor
 				input#senhor(type='text', placeholder='Senhor')
+				label Conceito
 				input#conceito(type='text', placeholder='Conceito')
 			section.card.atributos.compressed
 				button.toggle Atributos
@@ -32,18 +41,21 @@ html(lang='en')
 							button.menos -
 							span.ponto(id=id) 0
 							button.mais +
-				h2 Físicos
-				+pontos('Força','forca')
-				+pontos('Destreza','destreza')
-				+pontos('Vigor','vigor')
-				h2 Sociais
-				+pontos('Carisma','carisma')
-				+pontos('Manipulação','maniplulacao')
-				+pontos('Aparência','aparencia')
-				h2 Mentais
-				+pontos('Percepção','percepcao')
-				+pontos('Inteligência','inteligencia')
-				+pontos('Raciocínio','raciocinio')
+				div.compressed
+					h2 Físicos
+					+pontos('Força','forca')
+					+pontos('Destreza','destreza')
+					+pontos('Vigor','vigor')
+				div.compressed
+					h2 Sociais
+					+pontos('Carisma','carisma')
+					+pontos('Manipulação','maniplulacao')
+					+pontos('Aparência','aparencia')
+				div.compressed
+					h2 Mentais
+					+pontos('Percepção','percepcao')
+					+pontos('Inteligência','inteligencia')
+					+pontos('Raciocínio','raciocinio')
 			section.card.habilidades.compressed
 				button.toggle Habilidades
 				mixin pontos(nome, id)
@@ -53,40 +65,151 @@ html(lang='en')
 							button.menos -
 							span.ponto(id=id) 0
 							button.mais +
-				h2 Talentos
-				+pontos('Prontidão','prontidao')
-				+pontos('Esportes','esportes')
-				+pontos('Briga','briga')
-				+pontos('Esquiva','esquiva')
-				+pontos('Empatia','empatia')
-				+pontos('Expressão','expressao')
-				+pontos('Intimidação','intimidacao')
-				+pontos('Liderança','lideranca')
-				+pontos('Manha','manha')
-				+pontos('Lábia','labia')
-				h2 Perícias
-				+pontos('Emp. com animais','emp_animais')
-				+pontos('Ofícios','oficios')
-				+pontos('Condução','conducao')
-				+pontos('Etiqueta','etiqueta')
-				+pontos('Armas de fogo','armas_fogo')
-				+pontos('Armas Brancas','armas_brancas')
-				+pontos('Performance','performance')
-				+pontos('Segurança','seguranca')
-				+pontos('Furtividade','furtividade')
-				+pontos('Sobrevivência','sobrevivencia')
-				h2 Conhecimentos
-				+pontos('Acadêmicos','academicos')
-				+pontos('Computador','computador')
-				+pontos('Finanças','financas')
-				+pontos('Investigação','investigacao')
-				+pontos('Direito','direito')
-				+pontos('Linguistica','linguistica')
-				+pontos('Medicina','medicina')
-				+pontos('Ocultismo','ocultismo')
-				+pontos('Política','politics')
-				+pontos('Ciência','ciencia')
+				div.compressed
+					h2 Talentos
+					+pontos('Prontidão','prontidao')
+					+pontos('Esportes','esportes')
+					+pontos('Briga','briga')
+					+pontos('Esquiva','esquiva')
+					+pontos('Empatia','empatia')
+					+pontos('Expressão','expressao')
+					+pontos('Intimidação','intimidacao')
+					+pontos('Liderança','lideranca')
+					+pontos('Manha','manha')
+					+pontos('Lábia','labia')
+				div.compressed
+					h2 Perícias
+					+pontos('Emp. com animais','emp_animais')
+					+pontos('Ofícios','oficios')
+					+pontos('Condução','conducao')
+					+pontos('Etiqueta','etiqueta')
+					+pontos('Armas de fogo','armas_fogo')
+					+pontos('Armas Brancas','armas_brancas')
+					+pontos('Performance','performance')
+					+pontos('Segurança','seguranca')
+					+pontos('Furtividade','furtividade')
+					+pontos('Sobrevivência','sobrevivencia')
+				div.compressed
+					h2 Conhecimentos
+					+pontos('Acadêmicos','academicos')
+					+pontos('Computador','computador')
+					+pontos('Finanças','financas')
+					+pontos('Investigação','investigacao')
+					+pontos('Direito','direito')
+					+pontos('Linguistica','linguistica')
+					+pontos('Medicina','medicina')
+					+pontos('Ocultismo','ocultismo')
+					+pontos('Política','politics')
+					+pontos('Ciência','ciencia')
+			section.card.vantagens
+				button.toggle Vantagens
+				div
+					h2 Antecedentes
+					div.select.compressed
+						label.select -- Selecione seus antecedentes
+						p.option#label_aliados(data-option='aliados') Aliados
+						p.option#label_contatos(data-option='contatos') Contatos
+						p.option#label_fama(data-option='fama') Fama
+						p.option#label_geracao(data-option='geracao-ant') Geração
+						p.option#label_rebanho(data-option='rebanho') Rebanho
+						p.option#label_influencia(data-option='influencia') Influência
+						p.option#label_mentor(data-option='mentor') Mentor
+						p.option#label_recursos(data-option='recursos') Recursos
+						p.option#label_lacaios(data-option='lacaios') Lacaios
+						p.option#label_status(data-option='status') Status
+					div.hide
+						+pontos('Aliados','aliados')
+					div.hide
+						+pontos('Contatos','contatos')
+					div.hide
+						+pontos('Fama','fama')
+					div.hide
+						+pontos('Geração','geracao-ant')
+					div.hide
+						+pontos('Rebanho','rebanho')
+					div.hide
+						+pontos('Influência','influencia')
+					div.hide
+						+pontos('Mentor','mentor')
+					div.hide
+						+pontos('Recursos','recursos')
+					div.hide
+						+pontos('Lacaios','lacaios')
+					div.hide
+						+pontos('Status','status')
+				div
+					h2 Disciplinas
+					div.select.compressed
+						label.select -- Selecione suas Disciplinas
+						p.sub Básicas
+						p.option#label_animalismo(data-option='animalismo') Animalismo
+						p.option#label_auspicios(data-option='auspicios') Auspicios
+						p.option#label_dominacao(data-option='dominacao') Dominacao
+						p.option#label_fortitude(data-option='fortitude') Fortitude
+						p.option#label_ofuscacao(data-option='ofuscacao') Ofuscação
+						p.option#label_potencia(data-option='potencia') Potência
+						p.option#label_presenca(data-option='presenca') Presenca
+						p.option#label_rapidez(data-option='rapidez') Rapidez
+						p.sub Específica de clãs
+						p.option#label_demencia(data-option='demencia') Demência
+						p.option#label_metamorfose(data-option='metamorfose') Metamorfose
+						p.option#label_mortis(data-option='mortis') Mortis
+						p.option#label_necromancia(data-option='necromancia') Necromancia
+						p.option#label_quietus(data-option='quietus') Quietus
+						p.option#label_quimerismo(data-option='quimerismo') Quimerismo
+						p.option#label_serpentis(data-option='serpentis') Serpentis
+						p.option#label_taumaturgia(data-option='taumaturgia') Taumaturgia
+						p.option#label_tenebrosidade(data-option='tenebrosidade') Tenebrosidade
+						p.option#label_vicissitude(data-option='vicissitude') Vicissitude
+						p.option#label_voudoun(data-option='voudoun') Voudoun
+					div.hide
+						+pontos('Animalismo','animalismo')
+					div.hide
+						+pontos('Auspicios','auspicios')
+					div.hide
+						+pontos('Dominação','dominacao')
+					div.hide
+						+pontos('Fortitude','fortitude')
+					div.hide
+						+pontos('Ofuscação','ofuscacao')
+					div.hide
+						+pontos('Potência','potencia')
+					div.hide
+						+pontos('Presença','presenca')
+					div.hide
+						+pontos('Rapidez','rapidez')
+					div.hide
+						+pontos('Demência','demencia')
+					div.hide
+						+pontos('Metamorfose','metamorfose')
+					div.hide
+						+pontos('Mortis','mortis')
+					div.hide
+						+pontos('Necromancia','necromancia')
+					div.hide
+						+pontos('Quietus','quietus')
+					div.hide
+						+pontos('Quimerismo','quimerismo')
+					div.hide
+						+pontos('Serpentis','serpentis')
+					div.hide
+						+pontos('Taumaturgia','taumaturgia')
+					div.hide
+						+pontos('tenebrosidade','tenebrosidade')
+					div.hide
+						+pontos('Vicissitude','vicissitude')
+					div.hide
+						+pontos('Voudon','voudoun')
+				div
+					div
+						h2 Virtudes
+						+pontos('Consciência','consciencia')
+						+pontos('Autocontrole','autocontrole')
+						+pontos('Coragem','coragem')
+
+
+
+
+
 		script(type='text/javascript', src='umbrella.min.js')
 		script(type='text/javascript', src='save.js')
-
-

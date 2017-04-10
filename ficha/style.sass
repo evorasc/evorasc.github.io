@@ -44,12 +44,11 @@ body
 		width: 160px
 		margin-left: -10px
 .card
-	margin-top: 30px
-	width: 92%
-	margin-left: 4%
+	margin-top: 20px
+	width: 100%
 	background: white
 	box-shadow: 0px 0px 20px -5px rgba(0,0,0,0.5)
-	padding: 15px
+	padding: 10px
 	overflow: hidden
 	height: auto
 	button
@@ -57,29 +56,37 @@ body
 		border: none
 		padding: 10px
 		font-size: 22px
+		margin-bottom: 20px
 		width: 100%
 		color: white
-	input
+	.mais, .menos
+		margin-bottom: 0px
+	input[type='text'], input[type='tel']
 		display: block
 		width: 100%
 		font-size: 14px
-		margin: 20px 0px
+		margin: 5px 0px 20px 0px
 		border: 1px solid rgba(0,0,0,0.2)
 		padding: 10px
 		&:focus
 			border: 1px solid #ff6f72
+	div
+		overflow: hidden
 	h2
 		color: #000
-		margin: 20px 0px
+		margin: 10px 0px
 		font-weight: 700
 		font-size: 16px
-		margin-bottom: 20px
+		// margin-bottom: 20px
+		cursor: pointer
+	.compressed
+		height: 35px
 .pontos
 	display: flex
 	justify-content: space-between
 	align-items: center
 	padding-left: 20px
-	margin: 15px 0px
+	margin-bottom: 10px
 	h3,span
 		font-size: 16px
 	span
@@ -97,7 +104,55 @@ body
 	.mais
 		background: #009688
 .compressed
-	height: 70px
+	height: 63px
+.hide
+	display: none
+.select
+	position: relative
+	padding: 12px
+	// height: 40px
+	border: 1px solid black
+	font-size: 14px
+	margin-bottom: 10px
+	cursor: pointer
+	label.select
+		display: block
+		margin: -13px
+		padding: 12px
+		border: 1px solid #555
+		margin-bottom: 10px
+	.sub
+		color: #bcbcbc
+	&:after
+		content: ""
+		display: block
+		position: absolute
+		top: 13px
+		right: 12px
+		background: white
+		padding: 3px
+		border: 3px solid #555
+		border-top: transparent
+		border-left: transparent
+		transform: rotate(45deg)
+	p
+		font-size: 14px
+		margin-top: 20px
+	.chosen
+		color: #FF6F72
+		padding-left: 10px
+.vantagens
+	.compressed
+		height: 20px
+	div
+		.compressed
+			height: 40px
+		.compressed:last-child
+			height: 20px
+	h2
+		margin: 0px 0px 5px 0px
+	> div
+		margin-bottom: 20px
 	
 
 
