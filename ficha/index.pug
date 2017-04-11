@@ -5,9 +5,12 @@ html(lang='en')
 		meta(name="viewport", content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
 		title Ficha de Vampiro: A máscara
 		link(href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700', rel='stylesheet')
+		link(href='awesomplete.css', rel='stylesheet')
 		link(href='style.css', rel='stylesheet')
+		script(src='awesomplete.js', type='text/javascript')
+		
 	body(onload='fill()')
-		button.save SALVAR
+		button.add ADICIONAR
 		.wrapper
 			section.title
 				img(src="logo-red.png", alt="")
@@ -206,7 +209,16 @@ html(lang='en')
 						+pontos('Consciência','consciencia')
 						+pontos('Autocontrole','autocontrole')
 						+pontos('Coragem','coragem')
-
+			section.card.qualidades
+				button.toggle Qualidades e Defeitos
+				label Qualidade
+				input#quality(class='awesomplete', type='text', placeholder='Qualidade', data-list='Sentido Aguçado, Ambidestro')
+				//- div.pontos
+				//- 	h3 Defeito
+				//- 	.counter
+				//- 		button.menos -
+				//- 		span.ponto(id='id') 0
+				//- 		button.mais +
 
 
 

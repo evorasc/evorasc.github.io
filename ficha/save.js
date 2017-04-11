@@ -3,21 +3,16 @@ u('.toggle, h2, label.select').on('click', function(){
 	u(this).parent().toggleClass("compressed");
 })
 
-// show save button when the field is changed
+// save the input value
 u('.card input').on('keyup', function(){
-	u('.save').addClass('save-active')
-	u('body').addClass('with-save')
-})
-
-// save value and hide save button
-u('.save').on('click', function(){
-	u('.card').find('input').each(function(node, i){
-		var id = u(node).attr("id");
-		var valor = document.getElementById(id).value;
-		localStorage.setItem(id, valor);
-	})
-	u('.save').removeClass('save-active')
-	u('body').removeClass('with-save')
+	if (u(this).parent().parent().is('.qualidades')) {
+		u('.add').addClass('add-active')
+		u('body').addClass('with-add')
+		console.log("oi")
+	}
+	var id = u(this).attr("id");
+	var valor = document.getElementById(id).value;
+	localStorage.setItem(id, valor);
 })
 
 // add experience points
@@ -45,6 +40,7 @@ u('.menos, .mais').on('click', function(){
 
 //selecting option
 u('p.option').on('click',function(){
+	//visually activating the option
 	u(this).toggleClass('chosen');
 	//Showing the chosen option below
 	var option = u(this).data('option')
@@ -58,6 +54,17 @@ u('p.option').on('click',function(){
 	}
 })
 
+// adding quality and defects
+u('.add').on('click', function(){
+	u('.qualidades').append("<div class='pontos'><h3>Defeito</h3><div class='counter'><button class='menos'>-</button><span class='ponto' id='id'>0</span><button class='mais'>+</button></div></div>")
+})
+// div.pontos
+// 	h3 Defeito
+// 	.counter
+// 		button.menos -
+// 		span.ponto(id='id') 0
+// 		button.mais +
+
 
 // fill the field with the saved values
 function fill() {
@@ -70,7 +77,7 @@ function fill() {
 
 	// page title = character title
 	var personagem = localStorage.getItem("personagem");
-	if (personagem == "") {
+	if (personagem == "" || personagem == "null") {
 		u('#charTitle').text("ficha de personagem");
 	} else {
 		u('#charTitle').text("ficha de "+personagem);

@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Ficha de Vampiro: A máscara</title>
     <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700" rel="stylesheet">
+    <link href="awesomplete.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
+    <script src="awesomplete.js" type="text/javascript"></script>
   </head>
   <body onload="fill()">
-    <button class="save">SALVAR</button>
+    <button class="add">ADICIONAR</button>
     <div class="wrapper">
       <section class="title"><img src="logo-red.png" alt="">
         <h1 id="charTitle">Ficha de personagem</h1>
@@ -663,6 +665,11 @@
                     </div>
           </div>
         </div>
+      </section>
+      <section class="card qualidades">
+        <button class="toggle">Qualidades e Defeitos</button>
+        <label>Qualidade</label>
+        <input class="awesomplete" id="quality" type="text" placeholder="Qualidade" data-list="Sentido Aguçado, Ambidestro">
       </section>
     </div>
     <script type="text/javascript" src="umbrella.min.js"></script>
